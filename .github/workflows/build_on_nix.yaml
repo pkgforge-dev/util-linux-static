@@ -126,7 +126,7 @@ jobs:
               popd >/dev/null 2>&1
             continue-on-error: true
 
-          - uses: uraimo/run-on-arch-action@v2
+          - uses: uraimo/run-on-arch-action@v3
             name: Build artifact
             id: build
             with:
