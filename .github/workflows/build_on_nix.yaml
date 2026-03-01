@@ -76,7 +76,7 @@ jobs:
   
         - name: Upload_ARTIFACTS-x86_64-Linux
           if: env.HAS_RELEASE == 'TRUE'
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
               name: ARTIFACTS-x86_64-Linux.tar
               path: |
@@ -182,7 +182,7 @@ jobs:
     
           - name: Upload_ARTIFACTS-aarch64-Linux
             if: env.HAS_RELEASE == 'TRUE'
-            uses: actions/upload-artifact@v4
+            uses: actions/upload-artifact@v7
             with:
                 name: ARTIFACTS-aarch64-Linux.tar
                 path: |
